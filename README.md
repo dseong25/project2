@@ -38,7 +38,7 @@ A custom **HybridSort** algorithm was developed to optimize sorting efficiency b
 - **MergeSort** for non-nearly sorted small datasets and medium-sized datasets (500-5000 elements).
 - **QuickSort** for large datasets (>5000 elements).
 
-Note: - **BubbleSort** was used for small, nearly sorted datasets, but was removed for revisions as it was found to not be as efficient as the other three sorts in the tested cases.
+Note: **BubbleSort** was used for small, nearly sorted datasets, but was removed for revisions as it was found to not be as efficient as the other three sorts in the tested cases.
 
 ### QuickSort Modifications
 Two key optimizations were applied to **QuickSort**:
