@@ -66,12 +66,6 @@ Commonly used methods shared across sorting algorithms, such as **swap(int[] dat
    java Project2.HybridSortTest
    ```
 
-## Future Improvements
-- Implement additional sorting algorithms for further comparison.
-- Optimize memory usage in MergeSort.
-- Add visualization tools to observe sorting behavior.
-- Enhance HybridSort with further adaptive optimizations.
-
 ## Author
 **Daniel Seong**
 
