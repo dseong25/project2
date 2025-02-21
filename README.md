@@ -17,14 +17,14 @@ The following sorting algorithms were implemented:
 
 ## Sorting Test Framework
 A **SortingTest** file was created to test the sorting algorithms against various dataset types:
-- **Pre-sorted array** – Measures best-case performance.
-- **Reverse-sorted array** – Tests worst-case scenarios.
-- **Random array** – Evaluates average-case performance.
-- **Array with duplicates** – Assesses stability in sorting.
-- **Single-element array** – Tests edge cases.
-- **Odd-sized array** – Ensures sorting works with uneven lengths.
-- **Even-sized array** – Evaluates sorting on uniform-length datasets.
-- **Power-of-2-sized array** – Examines performance in cases often optimized in algorithms.
+- **Pre-sorted array**
+- **Reverse-sorted array**
+- **Random array**
+- **Array with duplicates**
+- **Single-element array**
+- **Odd-sized array**
+- **Even-sized array**
+- **Power-of-2-sized array**
 
 ## Sorting Analysis
 A **SortingAnalysis** file was created to measure key performance metrics of each sorting algorithm, including:
