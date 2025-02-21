@@ -1,116 +1,78 @@
-Sorting Algorithms Project
+# Sorting Algorithms Project
 
-Overview
+## Overview
+This project implements and analyzes various sorting algorithms, including both traditional and unconventional methods. The goal is to evaluate their performance on different types of datasets and optimize sorting efficiency using a **HybridSort** approach. Additionally, modifications were made to **QuickSort** for better performance.
 
-This project implements and analyzes various sorting algorithms, including both traditional and unconventional methods. The goal is to evaluate their performance on different types of datasets and optimize sorting efficiency using a HybridSort approach. Additionally, modifications were made to QuickSort for better performance.
-
-Implemented Sorting Algorithms
-
+## Implemented Sorting Algorithms
 The following sorting algorithms were implemented:
 
-Bogosort – A highly inefficient sort used for demonstration.
+1. **Bogosort** – A highly inefficient sort used for demonstration.
+2. **BubbleSort** – A simple but slow comparison-based algorithm.
+3. **InsertionSort** – Efficient for small or nearly sorted datasets.
+4. **SelectionSort** – A comparison-based sorting method.
+5. **MergeSort** – A stable, divide-and-conquer sorting algorithm.
+6. **QuickSort** – A fast sorting algorithm optimized with modifications.
+7. **GnomeSort** – A variation of insertion sort.
+8. **SleepSort** – A unique timing-based sorting technique.
 
-BubbleSort – A simple but slow comparison-based algorithm.
+## Sorting Test Framework
+A **SortingTest** file was created to test the sorting algorithms against various dataset types:
+- **Pre-sorted array** – Measures best-case performance.
+- **Reverse-sorted array** – Tests worst-case scenarios.
+- **Random array** – Evaluates average-case performance.
+- **Array with duplicates** – Assesses stability in sorting.
+- **Single-element array** – Tests edge cases.
+- **Odd-sized array** – Ensures sorting works with uneven lengths.
+- **Even-sized array** – Evaluates sorting on uniform-length datasets.
+- **Power-of-2-sized array** – Examines performance in cases often optimized in algorithms.
 
-InsertionSort – Efficient for small or nearly sorted datasets.
+## Sorting Analysis
+A **SortingAnalysis** file was created to measure key performance metrics of each sorting algorithm, including:
+- **Number of comparisons** – Measures efficiency of element comparisons.
+- **Memory usage** – Evaluates space complexity.
+- **Execution time** – Tracks overall speed.
 
-SelectionSort – A comparison-based sorting method.
+## HybridSort Implementation
+A custom **HybridSort** algorithm was developed to optimize sorting efficiency by dynamically switching between sorting algorithms based on dataset size and state. The strategy includes:
+- **InsertionSort** for very small datasets (<50 elements) or nearly sorted data.
+- **BubbleSort** for small, nearly sorted datasets.
+- **MergeSort** for medium-sized datasets (500-5000 elements).
+- **QuickSort** for large datasets (>5000 elements).
 
-MergeSort – A stable, divide-and-conquer sorting algorithm.
+### QuickSort Modifications
+Two key optimizations were applied to **QuickSort**:
+1. **Switching to InsertionSort** when subarrays become small, as **InsertionSort** is faster for small datasets.
+2. **Choosing the median of the low, mid, and high indexes** as the pivot to enhance partitioning efficiency.
 
-QuickSort – A fast sorting algorithm optimized with modifications.
+## Utility Functions
+Commonly used methods shared across sorting algorithms, such as **swap(int[] data, int i, int j)**, are stored in a separate **SortingUtility.java** file to reduce redundancy and improve maintainability.
 
-GnomeSort – A variation of insertion sort.
+## How to Run the Project
+1. **Compile the Java files:**
+   ```sh
+   javac Project2/*.java
+   ```
+2. **Run the sorting test:**
+   ```sh
+   java Project2.SortingTest
+   ```
+3. **Run the sorting analysis:**
+   ```sh
+   java Project2.SortingAnalysis
+   ```
 
-SleepSort – A unique timing-based sorting technique.
+## Future Improvements
+- Implement additional sorting algorithms for further comparison.
+- Optimize memory usage in MergeSort.
+- Add visualization tools to observe sorting behavior.
+- Enhance HybridSort with further adaptive optimizations.
 
-Sorting Test Framework
+## Author
+**Daniel Seong**
 
-A SortingTest file was created to test the sorting algorithms against various dataset types:
-
-Pre-sorted array – Measures best-case performance.
-
-Reverse-sorted array – Tests worst-case scenarios.
-
-Random array – Evaluates average-case performance.
-
-Array with duplicates – Assesses stability in sorting.
-
-Single-element array – Tests edge cases.
-
-Odd-sized array – Ensures sorting works with uneven lengths.
-
-Even-sized array – Evaluates sorting on uniform-length datasets.
-
-Power-of-2-sized array – Examines performance in cases often optimized in algorithms.
-
-Sorting Analysis
-
-A SortingAnalysis file was created to measure key performance metrics of each sorting algorithm, including:
-
-Number of comparisons – Measures efficiency of element comparisons.
-
-Memory usage – Evaluates space complexity.
-
-Execution time – Tracks overall speed.
-
-HybridSort Implementation
-
-A custom HybridSort algorithm was developed to optimize sorting efficiency by dynamically switching between sorting algorithms based on dataset size and state. The strategy includes:
-
-InsertionSort for very small datasets (<50 elements) or nearly sorted data.
-
-BubbleSort for small, nearly sorted datasets.
-
-MergeSort for medium-sized datasets (500-5000 elements).
-
-QuickSort for large datasets (>5000 elements).
-
-QuickSort Modifications
-
-Two key optimizations were applied to QuickSort:
-
-Switching to InsertionSort when subarrays become small, as InsertionSort is faster for small datasets.
-
-Choosing the median of the low, mid, and high indexes as the pivot to enhance partitioning efficiency.
-
-Utility Functions
-
-Commonly used methods shared across sorting algorithms, such as swap(int[] data, int i, int j), are stored in a separate SortingUtility.java file to reduce redundancy and improve maintainability.
-
-How to Run the Project
-
-Compile the Java files:
-
-javac Project2/*.java
-
-Run the sorting test:
-
-java Project2.SortingTest
-
-Run the sorting analysis:
-
-java Project2.SortingAnalysis
-
-Future Improvements
-
-Implement additional sorting algorithms for further comparison.
-
-Optimize memory usage in MergeSort.
-
-Add visualization tools to observe sorting behavior.
-
-Enhance HybridSort with further adaptive optimizations.
-
-Author
-
-Daniel Seong
-
-Course
-
+## Course
 CSC551 - Advanced Algorithms
 
-Date
-
+## Date
 February 19, 2025
 
