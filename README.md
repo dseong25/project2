@@ -61,6 +61,10 @@ Commonly used methods shared across sorting algorithms, such as **swap(int[] dat
    ```sh
    java Project2.SortingAnalysis
    ```
+4. **Run the hybrid sorting analysis:**
+   ```sh
+   java Project2.HybridSortTest
+   ```
 
 ## Future Improvements
 - Implement additional sorting algorithms for further comparison.
@@ -72,7 +76,7 @@ Commonly used methods shared across sorting algorithms, such as **swap(int[] dat
 **Daniel Seong**
 
 ## Course
-CSC551 - Advanced Algorithms
+CSC551 - Data Structures and Algorithms
 
 ## Date
 February 19, 2025
